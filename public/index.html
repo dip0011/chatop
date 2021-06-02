@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatOp | Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            width: 40%;
+        }
+
+        .selection form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .selection form div {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 20px;
+        }
+
+        .selection form div span {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .selection form div select {
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            padding: 5px 8px;
+            margin-top: 6px;
+        }
+
+        .selection form input[type='text'] {
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            padding: 5px 8px;
+            margin-top: 6px;
+        }
+
+        .selection form button {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            padding: 6px 10px;
+            background-color: #fff5fd;
+            outline: none;
+            border: 1px solid #005a8d;
+            border-radius: 2px;
+            color: #005a8d;
+            cursor: pointer;
+        }
+
+        .selection form button i {
+            padding-right: 4px;
+        }
+
+        .selection form button:hover {
+            background-color: #fdebfa;
+            color: #022e57;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 300px) {
+            .navbar .logo {
+                font-size: 18px;
+            }
+
+            .navbar .logo i {
+                font-size: 20px;
+                padding-right: 6px;
+            }
+
+            .navbar .leave button {
+                font-size: 12px;
+                padding: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><i class="fa fa-envelope-open" aria-hidden="true"></i>ChatOp</div>
+            <div class="leave"><button onclick="window.location = '#'">Register</button></div>
+        </div>
+        <div class="selection">
+            <form action="chat.html" id="chat-form" method="GET">
+                <div>
+                    <span>Enter Your Nick</span>
+                    <input type="text" id="username" name="username" placeholder="Write Your Nick Here!" required>
+                </div>
+                <div>
+                    <span>Enter Your Age</span>
+                    <input type="text" id="age" name="age" placeholder="Write Your Age Here!" required>
+                    <!-- <span>Select Room</span>
+                    <select id="room" name="room">
+                        <option value="0">Please Select One</option>
+                        <option value="Decent">Decent</option>
+                        <option value="Personal">Personal</option>
+                    </select> -->
+                </div>
+                <div>
+                    <button><i class="fa fa-play" aria-hidden="true"></i>Enter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

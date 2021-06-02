@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Design For Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+body {
+    background-color: #fff5fd;
+    color: #fff5fd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: #005a8d;
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container .navbar {
+    background-color: #022e57;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    font-size: 22px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+}
+
+.navbar .logo i{
+    font-size: 26px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+.navbar .logo {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar .leave button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 8px 12px;
+    background-color: #fff5fd;
+    outline: none;
+    border: 1px solid #005a8d;
+    border-radius: 2px;
+    color: #005a8d;
+    cursor: pointer;
+}
+
+.navbar .leave button:hover {
+    background-color: #fdebfa;
+    color: #022e57;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.body .left {
+    background-color: #005a8d;
+    width: 27%;
+    padding: 8px;
+    overflow-y: scroll;
+}
+
+.body .right {
+    background-color: #fff;
+    color: #022e57;
+    padding: 8px;
+    width: 80%;
+}
+
+.body .left .room .roomTitle i{
+    padding: 8px;
+    font-size: 22px;
+}
+.body .left .room .roomTitle{
+    font-weight: 500;
+    font-size: 18px;
+}
+.body .left .room .roomName{
+    padding: 8px;
+    margin-left: 8px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    background-color: #022e57;
+}
+
+.body .left .user{
+    margin-top: 10px;
+}
+
+.body .left .user .userTitle i{
+    padding: 8px;
+    font-size: 22px;
+}
+.body .left .user .userTitle{
+    font-weight: 500;
+    font-size: 18px;
+}
+.body .left .user .userName{
+    padding: 8px;
+    /* cursor: pointer; */
+}
+
+.body .left .user .userName ul{
+    list-style: none;
+}
+
+.body .left .user .userName ul img{
+    height: 60%;
+    width: 60%;
+}
+
+.body .left .user .userName ul li{
+    padding: 6px;
+}
+
+.body .right{
+	padding: 30px;
+	max-height: 500px;
+    overflow-y: scroll;
+}
+
+.body .right .message{
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #fff5fd;
+	border-radius: 5px;
+}
+
+.body .right .message .meta{
+	font-size: 15px;
+	font-weight: 500;
+	color: #9f5f80;
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.body .right .message .meta span{
+	color: #777;
+}
+.body .right .message p{
+    word-wrap: break-word; 
+}
+
+.writebar form{
+    background-color: #022e57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 12px 24px;
+}
+
+.writebar form input[type='text']{
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    padding: 5px 8px;
+	flex: 1;
+}
+
+.writebar form button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 6px 10px;
+    background-color: #fff5fd;
+    outline: none;
+    border: 1px solid #005a8d;
+    border-radius: 2px;
+    color: #005a8d;
+    cursor: pointer;
+}
+
+.writebar form button i{
+    padding-right: 4px;
+}
+
+.writebar form button:hover{
+    background-color: #fdebfa;
+    color: #022e57;
+}
+
+
+/* Media Query */
+@media (max-width: 850px) {
+	.body .right{
+		display: block;
+        width: 100%;
+	}
+
+	.body .left{
+		display: none;
+	}
+}
+@media (max-width: 950px){
+    .body .left .room .roomTitle i{
+        padding: 6px;
+        font-size: 18px;
+    }
+    .body .left .room .roomTitle{
+        font-size: 16px;
+    }
+    .body .left .room .roomName{
+        font-size: 14px;
+    }
+    
+    .body .left .user{
+        margin-top: 9px;
+    }
+    
+    .body .left .user .userTitle i{
+        font-size: 18px;
+    }
+    .body .left .user .userTitle{
+        font-size: 16px;
+    }
+    .body .left .user .userName{
+        padding: 8px;
+    }
+    
+    .body .left .user .userName ul{
+        list-style: none;
+    }
+    
+    .body .left .user .userName ul li{
+        padding: 6px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        background-color: #005a8d;
+        width: 95%;
+        margin: 10px auto;
+    }
+}
+

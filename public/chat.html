@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatOp | Chat Here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><i class="fa fa-envelope-open" aria-hidden="true"></i>ChatOp</div>
+            <div class="leave"><button  id="leave-btn">Leave Room</button></div>
+        </div>
+        <div class="body">
+            <div class="left">
+                <div class="room">
+                    <div class="roomTitle"><i class="fa fa-comments" aria-hidden="true"></i>Room Name</div>
+                    <div class="roomName" id="room">Decent</div>
+                </div>
+                <div class="user">
+                    <!-- <div class="userTitle"><i class="fa fa-users" aria-hidden="true"></i>Our Users</div> -->
+                    <div class="userName">
+                        <ul id="users">
+                            <img src="img/welcome.png" alt="Welcome">
+                            <!-- <li>MrDee</li>
+                            <li>Meet</li>
+                            <li>Ind</li>
+                            <li>Wuhan</li>
+                            <li>Corona</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <!-- <div class="message">
+                    <p class="meta">Brad <span>9:12pm</span></p>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                        repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit obcaecati
+                        veritatis.
+                    </p>
+                </div>
+                <div class="message">
+                    <p class="meta">Brad <span>9:13pm</span></p>
+                    <p class="text">
+                        Sorry guys, i am gotta go...
+                    </p>
+                </div> -->
+            </div>
+        </div>
+        <div class="writebar">
+            <form id="chat-form">
+                <input type="text" id="msg" placeholder="Write Something Here!" autocomplete="off">
+                <button><i class="fa fa-paper-plane" aria-hidden="true"></i>Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
